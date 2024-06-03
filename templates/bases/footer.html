@@ -1,0 +1,164 @@
+{% load static %}
+
+<footer class="footer py-5 landingpage" style="background-color: #9d2449; color: #CCCCCC;">
+    <div class="container-md container-lg container-xl">
+        <div class="row">
+
+            <div class="col-md-6 col-lg-2 container-logo-gob-dig">
+                <img class="logo-gob-dig" src="{% static 'images/LOGOSOFICIALES-02.png' %}">
+            </div>
+
+            <div class="col-md-6 col-lg-3 text-footer">
+
+                <h5><b>Sobre Nosotros:</b></h5>
+
+                <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;Col. Tabasco 2000</p>
+
+                <a href="https://www.google.com/maps/place/Secretar%C3%ADa+de+Administraci%C3%B3n+e+Innovaci%C3%B3n+Gubernamental/@17.999723,-92.943832,17z/data=!4m5!3m4!1s0x0:0x2d20f48c38d4056a!8m2!3d17.9999178!4d-92.9442538?hl=es"
+                    target="_blank">
+                    <p class="text-footer">C.P. 86035 Villahermosa, Tabasco, MX</p>
+                </a>
+
+
+                <p class="text-footer"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;Tel.<a class="text-footer"
+                        href="tel:+52-993-3-10-97-50">+52 (993) 3 10 97 50</a> Ext.
+                    48000</p>
+
+
+
+                <p class="text-footer"><i class="fas fa-clock"></i>&nbsp;&nbsp;</i>Lunes a Viernes de 8:00 a 15:00
+                    hrs
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-3" id="redes">
+
+                <h5 class="text-footer"><b class="grandee">Siguenos en:</b></h5>
+
+                <a href="https://www.instagram.com/sedec_tab/" target="_blank">
+                    {% include 'svg/insta.svg' %}
+                </a>
+
+                <a href="https://www.facebook.com/sedec.tab/" target="_blank">
+                    {% include 'svg/facebook.svg' %}
+                </a>
+
+                <a href="https://twitter.com/SEDEC_Tab" target="_blank">
+                    {% include 'svg/twitter.svg' %}
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCi9LG4z1j0hwppq8-vrnYpQ" target="_blank">
+                    {% include 'svg/youtube.svg' %}
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-2" id="ubicacion">
+                <h5 class="text-footer"><b class="grandee">Ubicación:</b></h5>
+                <div class="div-icon-map">
+                    <a href="https://www.google.com/maps/place/Secret%C3%ADa+para+el+Desarrollo+Econ%C3%B3mico+y+la+Competitividad+del+Estado+de+Tabasco/@17.999723,-92.943832,15z/data=!4m5!3m4!1s0x0:0x271107a6bbaad5dc!8m2!3d17.9997234!4d-92.9438317?hl=es">
+                        <i class="fa-solid fa-map-location-dot icon-map-ubic"></i>
+                    </a>
+                </div>
+                <div class="map-ubic">
+                    <iframe class="googlemap"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.5486646451345!2d-92.94602038503326!3d17.999723387714372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd78cf2cbba5f%3A0x271107a6bbaad5dc!2sSecretar%C3%ADa%20para%20el%20Desarrollo%20Econ%C3%B3mico%20y%20la%20Competitividad%20del%20Estado%20de%20Tabasco!5e0!3m2!1ses!2smx!4v1634570202381!5m2!1ses!2smx"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<section class="sub-footer" style="color: #CCCCCC;">
+    <div class="container">
+        <div class="copyright">
+            &copy; Derechos Reservados.
+            <br>
+            Secretaría para el Desarrollo Económico y la Competitividad.
+            <br>
+            Unidad de Apoyo Técnico e Informático.
+        </div>
+    </div>
+</section>
+{% comment %} <footer class="footer py-5 landingpage">
+    <div class="container-md container-lg container-xl">
+        <div class="row">
+
+            <div class="col-md-6 col-lg-2 container-logo-gob-dig ">
+                <img class="logo-gob-dig" src="{% static 'images/LOGOSOFICIALES-02.png' %}">
+            </div>
+
+            <div class="col-md-6 col-lg-3 text-footer">
+
+                <h5><b>Sobre Nosotros:</b></h5>
+
+                <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;Col. Tabasco 2000</p>
+
+                <a href="https://www.google.com/maps/place/Secretar%C3%ADa+de+Administraci%C3%B3n+e+Innovaci%C3%B3n+Gubernamental/@17.999723,-92.943832,17z/data=!4m5!3m4!1s0x0:0x2d20f48c38d4056a!8m2!3d17.9999178!4d-92.9442538?hl=es"
+                    target="_blank">
+                    <p class="text-footer">C.P. 86035 Villahermosa, Tabasco, MX</p>
+                </a>
+
+
+                <p class="text-footer"> <i class="fas fa-phone-alt"></i>&nbsp;&nbsp;Tel.<a class="text-footer"
+                        href="tel:+52-993-3-10-97-50">+52 (993) 3 10 97 50</a> Ext.
+                    48000</p>
+
+
+
+                <p class="text-footer"><i class="fas fa-clock"></i>&nbsp;&nbsp;</i>Lunes a Viernes de 8:00 a 15:00
+                    hrs
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-3" id="redes">
+
+                <h5 class="text-footer"><b class="grandee">Siguenos en:</b></h5>
+
+                <a href="https://www.instagram.com/sedec_tab/" target="_blank">
+                    {% include 'svg/insta.svg' %}
+                </a>
+
+                <a href="https://www.facebook.com/sedec.tab/" target="_blank">
+                    {% include 'svg/facebook.svg' %}
+                </a>
+
+                <a href="https://twitter.com/SEDEC_Tab" target="_blank">
+                    {% include 'svg/twitter.svg' %}
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCi9LG4z1j0hwppq8-vrnYpQ" target="_blank">
+                    {% include 'svg/youtube.svg' %}
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-2" id="ubicacion">
+                <h5 class="text-footer"><b class="grandee">Ubicación:</b></h5>
+                <div class="div-icon-map">
+                    <a href="https://www.google.com/maps/place/Secretar%C3%ADa+para+el+Desarrollo+Econ%C3%B3mico+y+la+Competitividad+del+Estado+de+Tabasco/@17.999723,-92.943832,15z/data=!4m5!3m4!1s0x0:0x271107a6bbaad5dc!8m2!3d17.9997234!4d-92.9438317?hl=es">
+                        <i class="fa-solid fa-map-location-dot icon-map-ubic"></i>
+                    </a>
+                </div>
+                <div class="map-ubic">
+                    <iframe class="googlemap"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.5486646451345!2d-92.94602038503326!3d17.999723387714372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd78cf2cbba5f%3A0x271107a6bbaad5dc!2sSecretar%C3%ADa%20para%20el%20Desarrollo%20Econ%C3%B3mico%20y%20la%20Competitividad%20del%20Estado%20de%20Tabasco!5e0!3m2!1ses!2smx!4v1634570202381!5m2!1ses!2smx"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<section class="sub-footer">
+    <div class="container">
+        <div class="copyright">
+            &copy; Derechos Reservados.
+            <br>
+            Secretaría para el Desarrollo Económico y la Competitividad.
+            <br>
+            Unidad de Apoyo Técnico e Informático.
+        </div>
+    </div>
+</section> {% endcomment %}

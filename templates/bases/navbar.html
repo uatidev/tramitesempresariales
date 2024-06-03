@@ -1,0 +1,41 @@
+{% load static %}
+
+<nav id="sidebar">
+    <div class="sidebar-header" style="display: flex; justify-content: flex-end;">
+        <a id="sidebarClose" style="margin-right: 1rem; margin-top: 0.3rem; cursor: pointer;">
+            <i class="fa-solid fa-xmark fa-2x"></i>
+        </a>
+    </div>
+    <ul class="list-unstyled components" style="margin-top: 1rem;">
+        <li>
+            <a href="{% url 'lp:lpage' %}">INICIO</a>
+        </li>        <li>
+            <a href="{% url 'lp:constitucion' %}" target="_blank">CONSTITUCIÓN</a>
+        </li>
+        <li>
+            <a href="{% url 'lp:infraestructura' %}" target="_blank">INFRAESTRUCTURA Y SERVICIOS</a>
+        </li>
+        <li>
+            <a href="{% url 'lp:operaciones' %}" target="_blank">INICIO DE OPERACIONES</a>
+        </li>
+        <li>
+            <a href="{% url 'lp:directorio' %}" target="_blank">DIRECTORIO SEDEC</a>
+        </li>
+        <li>
+            <a href="{% url 'lp:autoridades' %}" target="_blank">AUTOTIDADES MEJORA REGULATORIA</a>
+        </li>
+        <li style="height: 100vh;"></li> <!-- Elemento oculto para crear espacio -->
+
+    </ul>
+</nav>
+
+<nav class="navbar prueba-fix navbar-expand-lg" id="mainNava">
+    <div class="container-fluid">
+        <a class="nav-logo">
+            <img class="LogoResponsivo" src="{% static 'images/logo-bueno.png' %}" alt="Logo SEDEC">
+        </a>
+        <button type="button" id="sidebarCollapse" class="btn-expand-sd">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+    </div>
+</nav>

@@ -1,0 +1,375 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+{% block body %}
+{% include 'bases/navbar.html'%}
+<section class="banner" style="margin-top: 5rem; position: relative;">
+    <div class="carousel-caption" style="position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 1000; width: 100%;">
+        <h1 style="font-size: calc(2vw + 1rem); font-weight: 900;">2. Infraestructura y Servicios para la Operación</h1>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block w-100" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{% static 'images/pointing-sketch-scaled.jpg' %}'); height: 100vh; background-size: cover; background-position: center;"></div>
+            </div>
+           
+        </div>
+
+    </div>
+</section>
+<div style="background-color: #fff;">
+    <div class="container">
+        <div class="row row-spacing" style="padding-top: 4rem; padding-bottom: 4rem;">
+            <div class="col-md-6 order-md-2 centered">
+                <p style="font-size: 20px;">Tramites y Servicios registrados</p>
+            </div>
+            <div class="col-md-6 order-md-1 centered">
+                <p style="font-size: 20px;">Realiza los trámites para constituir una empresa</p>
+            </div>
+        </div>
+            
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center">
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">1</h2>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Certificado de Búsqueda de Propiedad</h2>
+                <div class="elementor-widget-container">
+                    <p class="mt-2 mb-2 titulo-ficha texto-verde">
+                        <span style="text-decoration: underline;"><strong>Modalidad: Ninguna</strong></span>
+                    </p>
+                    <p><strong>Homoclave:</strong> SG-2021-5422-012-A <strong> Tipo: </strong>&nbsp;Trámite&nbsp;<strong>Tipo de trámite:</strong> Certificación&nbsp;
+                    </p>
+                </div>
+                <p><strong>Dependencia: </strong>Secretaria de Gobierno</p>
+                <p><strong>Unidad administrativa: </strong>Dirección General de Registro Público de la Propiedad y del Comercio</p>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>
+                    <label class="infra-custom">Administración Pública Federal</label>
+                    <i class="fa-solid fa-location-dot" style="color: #4a964b;"></i>
+                    <a href="https://maps.app.goo.gl/wBmRXgVaDxmE7dCL8" target="__blank"> Tabasco </a>
+                </div>
+                <p>Es el certificado o documento que describe los bienes inmuebles de una persona física o moral.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img id="responsive-image" width="160" height="160" src="{% static 'images/SEGOB.png' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: -14px;">
+            </div>
+            <div class="d-flex flex-wrap justify-content-center" style="margin-top: 20px;"> <!-- Agregado margin-top -->
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://servicios.spf.tabasco.gob.mx/re_serviciosinternet/faces/servicios?_adf.ctrl-state=dmpxbgew9_35')">Comenzar Trámite en linea</button>
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://catalogonacional.gob.mx/FichasPdf/Tr%C3%A1mite_40160_Homoclave_SF-2021-5421-017-A.pdf')">Descargar Ficha PDF</button>
+            </div>
+        </div>
+            
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center"> <!-- Agregado justify-content-center y d-flex -->
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">2</h2> <!-- Ajuste del padding-right y padding-left para alargar la línea -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Certificado de Libertad de Gravamen</h2>
+                <div class="elementor-widget-container">
+                    <p class="mt-2 mb-2 titulo-ficha texto-verde">
+                    <span style="text-decoration: underline;"><strong>Modalidad: Ninguna</strong></span>
+                    </p>
+                    <p><strong>Homoclave:</strong> SG-2021-5422-015-A <strong> Tipo: </strong>&nbsp;Trámite&nbsp;<strong>Tipo de trámite:</strong> Certificación&nbsp;
+                    </p>
+                </div>
+                <p><strong>Dependencia: </strong>Secretaria de Gobierno</p>
+                <p><strong>Unidad administrativa: </strong>Dirección General de Registro Público de la Propiedad y del Comercio</p>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>
+                    <label class="infra-custom">Administración Pública Federal</label>
+                </div>
+                <p>Certificación donde se hace constar que en los archivos de la oficina de Registro Público no existe inscripción o anotación que imponga gravamen a determinado inmueble o en su caso se le detallan los gravámenes que reportan.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img id="responsive-image" width="160" height="160" src="{% static 'images/SEGOB.png' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: -14px;">
+            </div>
+        </div>
+
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center"> <!-- Agregado justify-content-center y d-flex -->
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">3</h2> <!-- Ajuste del padding-right y padding-left para alargar la línea -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Constancia de Alineamiento Número oficial o ambos</h2>
+                <p><strong>Tipo: </strong> Trámite</p>
+                <p><strong>Rubro: </strong>Autorizaciones, Certificada Concesión, Informes, Registros y Avisos</p>
+                <p><strong>Tiempo promedio de resolución después de validación: </strong> indefinido días hábiles</p>
+                <p><strong>Horario de Atención: </strong>Lunes a viernes de 09:00 a 14:00 hrs.</p>
+                <p><strong>Vigencia del Trámite: </strong>180 días naturales para el Alineamiento en el caso de Número Oficial es única vez</p>
+                <div class="col-md-12 mb-2">
+                    <strong>Unidad administrativa: Coordinación de Deporte</strong>
+                    <strong>Nivel de gobierno: </strong>
+                    <label class="alca-custom">Municipio o Alcaldía</label>
+                </div>
+                <p>El Alineamiento oficial es la traza sobre el terreno que limita el predio respectivo con la vía pública en uso o con la futura vía pública.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img width="200" height="160" src="{% static 'images/mapa.png' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: -14px;">
+            </div>
+            <div class="d-flex flex-wrap justify-content-center" style="margin-top: 20px;"> <!-- Agregado margin-top -->
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://tramites.villahermosa.gob.mx/tramites/ventanilla/0')">Comenzar Tramíte en linea</button>
+            </div>
+        </div>
+
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center"> <!-- Agregado justify-content-center y d-flex -->
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">4</h2> <!-- Ajuste del padding-right y padding-left para alargar la línea -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Estudio de Prefactibilidad de Análisis de Riesgo</h2>
+                <div class="elementor-widget-container">
+                    <p class="mt-2 mb-2 titulo-ficha texto-verde">
+                    <span style="text-decoration: underline;"><strong>Modalidad: Ninguna</strong></span>
+                    </p>
+                    <p><strong>Homoclave:</strong> IPCET-2021-5403-041-A <strong>Tipo:</strong>&nbsp;Trámite&nbsp;<strong>Tipo de trámite:</strong> Certificación&nbsp;
+                    </p>
+                </div>
+                <p><strong>Dependencia: </strong>Instituto de Protección Civil</p>
+                <p><strong>Unidad administrativa: </strong>Dirección de Gestión Integral de Riesgos</p>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>
+                    <label class="infra-custom">Administración Pública Federal</label>
+                    <i class="fa-solid fa-location-dot" style="color: #4a964b;"></i>
+                    <a href="https://maps.app.goo.gl/wBmRXgVaDxmE7dCL8"> Tabasco </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img width="200" height="160" src="{% static 'images/proteccion-civil.jpg' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: 20px;">
+            </div>
+            
+            <div class="d-flex flex-wrap justify-content-center" style="margin-top: 20px;"> <!-- Agregado margin-top -->
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://catalogonacional.gob.mx/FichasPdf/Tr%C3%A1mite_29703_Homoclave_IPCET-2021-5403-041-A.pdf')">Descargar Ficha PDF</button>
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://conamer.gob.mx/tramites/Fileuploads/Formato_Tramite_2021930191558734.pdf')">Descargar Formato</button>
+            </div>
+        </div>
+
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center"> <!-- Agregado justify-content-center y d-flex -->
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">5</h2> <!-- Ajuste del padding-right y padding-left para alargar la línea -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Recepción, evaluación y resolución de estudios de impacto ambiental</h2>
+                <p><strong>Modalidad: </strong>Informe Preventivo</p>
+                <div class="elementor-widget-container">
+                    <p><strong>Homoclave:</strong> SBSCC-2021-5417-067-A <strong> Tipo: </strong>&nbsp;Trámite&nbsp;<strong>Tipo de trámite:</strong> Certificación&nbsp;
+                    </p>
+                </div>
+                <p><strong>Dependencia: </strong>Secretaría de Bienestar Sustentabilidad y Cambio Climático</p>
+                <p><strong>Unidad administrativa: </strong>Secretaría Técnica de la Subsecretaría de Sustentabilidad y Cambio Climático</p>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>
+                    <label class="infra-custom">Administración Pública Federal</label>
+                    <i class="fa-solid fa-location-dot" style="color: #4a964b;"></i>
+                    <a href="https://maps.app.goo.gl/wBmRXgVaDxmE7dCL8"> Tabasco </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img width="160" height="160" src="{% static 'images/bienestar.jpg' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: 20px;">
+            </div>
+            <div class="d-flex flex-wrap justify-content-center" style="margin-top: 20px;"> <!-- Agregado margin-top -->
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://catalogonacional.gob.mx/FichasPdf/Tr%C3%A1mite_29882_Homoclave_SBSCC-2021-5417-067-A.pdf')">Descargar Ficha PDF</button>
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://conamer.gob.mx/tramites/Fileuploads/Formato_Tramite_2021930221554669.pdf')">Descargar Formato</button>
+            </div>
+        </div>
+
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center"> <!-- Agregado justify-content-center y d-flex -->
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">6</h2> <!-- Ajuste del padding-right y padding-left para alargar la línea -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Recepción, evaluación y resolución de la manifestación de impacto ambiental</h2>
+                <p><strong>Modalidad: </strong>General</p>
+                <div class="elementor-widget-container">
+                    <p><strong>Homoclave:</strong> SBSCC-2021-5417-031-A <strong> Tipo: </strong>&nbsp;Trámite&nbsp;<strong>Tipo de trámite:</strong> Certificación&nbsp;
+                    </p>
+                </div>
+                <p><strong>Dependencia: </strong>Secretaría de Bienestar Sustentabilidad y Cambio Climático</p>
+                <p><strong>Unidad administrativa: </strong>Secretaría Técnica de la Subsecretaría de Sustentabilidad y Cambio Climático</p>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>
+                    <label class="infra-custom">Administración Pública Federal</label>
+                    <i class="fa-solid fa-location-dot" style="color: #4a964b;"></i>
+                    <a href="https://maps.app.goo.gl/wBmRXgVaDxmE7dCL8"> Tabasco </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img width="160" height="160" src="{% static 'images/bienestar.jpg' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: 20px;">
+            </div>
+            <div class="d-flex flex-wrap justify-content-center" style="margin-top: 20px;"> <!-- Agregado margin-top -->
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://catalogonacional.gob.mx/FichasPdf/Tr%C3%A1mite_29424_Homoclave_SBSCC-2021-5417-031-A.pdf')">Descargar Ficha PDF</button>
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://conamer.gob.mx/tramites/Fileuploads/Formato_Tramite_202110121338845.pdf')">Descargar Formato</button>
+            </div>
+        </div>
+        
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center"> <!-- Agregado justify-content-center y d-flex -->
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">7</h2> <!-- Ajuste del padding-right y padding-left para alargar la línea -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Recepción, evaluación y resolución de la manifestación de impacto ambiental</h2>
+                <p><strong>Modalidad: </strong>Particular</p>
+                <div class="elementor-widget-container">
+                    <p><strong>Homoclave:</strong> SBSCC-2021-5417-032-A <strong> Tipo: </strong>&nbsp;Trámite&nbsp;<strong>Tipo de trámite:</strong> Certificación&nbsp;
+                    </p>
+                    <p><strong>Dependencia: </strong>Secretaría de Bienestar Sustentabilidad y Cambio Climático</p>
+                    <p><strong>Unidad administrativa: </strong>Secretaría Técnica de la Subsecretaría de Sustentabilidad y Cambio Climático</p>
+
+                </div>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>
+                    <label class="infra-custom">Administración Pública Federal</label>
+                    <i class="fa-solid fa-location-dot" style="color: #4a964b;"></i>
+                    <a href="https://maps.app.goo.gl/wBmRXgVaDxmE7dCL8"> Tabasco </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img width="160" height="160" src="{% static 'images/bienestar.jpg' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: 20px;">
+            </div>
+            <div class="d-flex flex-wrap justify-content-center" style="margin-top: 20px;"> <!-- Agregado margin-top -->
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://catalogonacional.gob.mx/FichasPdf/Tr%C3%A1mite_29425_Homoclave_SBSCC-2021-5417-032-A.pdf')">Descargar Ficha PDF</button>
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://conamer.gob.mx/tramites/Fileuploads/Formato_Tramite_202110410841491.pdf')">Descargar Formato</button>
+            </div>
+        </div>
+        
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center"> <!-- Agregado justify-content-center y d-flex -->
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">8</h2> <!-- Ajuste del padding-right y padding-left para alargar la línea -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Solicitud de exención de evaluación del impacto ambiental</h2>
+                <p><strong>Modalidad: </strong>Ninguna</p>
+                <div class="elementor-widget-container">
+                    <p><strong>Homoclave:</strong> SBSCC-2021-5417-071-A <strong> Tipo: </strong>&nbsp;Trámite&nbsp;<strong>Tipo de trámite:</strong> Certificación&nbsp;
+                    </p>
+                    <p><strong>Dependencia: </strong>Secretaría de Bienestar Sustentabilidad y Cambio Climático</p>
+                    <p><strong>Unidad administrativa: </strong>Secretaría Técnica de la Subsecretaría de Sustentabilidad y Cambio Climático</p>
+                </div>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>
+                    <label class="infra-custom">Administración Pública Federal</label>
+                    <i class="fa-solid fa-location-dot" style="color: #4a964b;"></i>
+                    <a href="https://maps.app.goo.gl/wBmRXgVaDxmE7dCL8"> Tabasco </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img width="160" height="160" src="{% static 'images/bienestar.jpg' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: 20px;">
+            </div>
+            <div class="d-flex flex-wrap justify-content-center" style="margin-top: 20px;"> <!-- Agregado margin-top -->
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://catalogonacional.gob.mx/FichasPdf/Tr%C3%A1mite_29886_Homoclave_SBSCC-2021-5417-071-A.pdf')">Descargar Ficha PDF</button>
+            </div>
+        </div>
+
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center"> <!-- Agregado justify-content-center y d-flex -->
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">9</h2> <!-- Ajuste del padding-right y padding-left para alargar la línea -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Recepción, revisión y resolución de Estudio de Riesgo Ambiental</h2>
+                <p><strong>Modalidad: </strong>Ninguna</p>
+                <div class="elementor-widget-container">
+                    <p><strong>Homoclave:</strong> SBSCC-2021-5417-068-A <strong> Tipo: </strong>&nbsp;Trámite&nbsp;<strong>Tipo de trámite:</strong> Certificación&nbsp;
+                    </p>
+                    <p><strong>Dependencia: </strong>Secretaría de Bienestar Sustentabilidad y Cambio Climático</p>
+                    <p><strong>Unidad administrativa: </strong>Secretaría Técnica de la Subsecretaría de Sustentabilidad y Cambio Climático</p>
+                </div>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>
+                    <label class="infra-custom">Administración Pública Federal</label>
+                    <i class="fa-solid fa-location-dot" style="color: #4a964b;"></i>
+                    <a href="https://maps.app.goo.gl/wBmRXgVaDxmE7dCL8"> Tabasco </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img width="160" height="160" src="{% static 'images/bienestar.jpg' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: 20px;">
+            </div>
+            <div class="d-flex flex-wrap justify-content-center" style="margin-top: 20px;"> <!-- Agregado margin-top -->
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://catalogonacional.gob.mx/FichasPdf/Tr%C3%A1mite_29883_Homoclave_SBSCC-2021-5417-068-A.pdf')">Descargar Ficha PDF</button>
+                <button type="button" class="btn" style="background-color: #a4244d; color: #ffffff; margin-right: 10px; margin-bottom: 10px;" onclick="window.open('https://conamer.gob.mx/tramites/Fileuploads/Formato_Tramite_2021101153758.pdf')">Descargar PDF</button>
+            </div>
+        </div>
+
+        <div class="row row-spacing">
+            <div class="col-md-1 d-flex align-items-center justify-content-center"> <!-- Agregado justify-content-center y d-flex -->
+                <div>
+                    <h2 class="elementor-heading-title" style="color:black; border-right: 1px solid black; padding-right: 10px; padding-left: 10px; margin-bottom: 10px;">10</h2> <!-- Ajuste del padding-right y padding-left para alargar la línea -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title">Recepción, revisión y resolución de Estudio de Riesgo Ambiental</h2>
+                <p><strong>Modalidad: </strong>Ninguna</p>
+                <div class="elementor-widget-container">
+                    <p><strong>Homoclave:</strong> SBSCC-2021-5417-068-A <strong> Tipo: </strong>&nbsp;Trámite&nbsp;<strong>Tipo de trámite:</strong> Certificación&nbsp;
+                    </p>
+                    <p><strong>Dependencia: </strong>Secretaría de Bienestar Sustentabilidad y Cambio Climático</p>
+                    <p><strong>Unidad administrativa: </strong>Secretaría Técnica de la Subsecretaría de Sustentabilidad y Cambio Climático</p>
+                </div>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>
+                    <label class="infra-custom">Administración Pública Federal</label>
+                    <i class="fa-solid fa-location-dot" style="color: #4a964b;"></i>
+                    <a href="https://maps.app.goo.gl/wBmRXgVaDxmE7dCL8"> Tabasco </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img width="160" height="160" src="{% static 'images/bienestar.jpg' %}" class="attachment-large size-large" alt="" loading="lazy" style="margin-top: 20px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div style="background-color: #f2f2f2;">
+    <div class="container">
+        <div class="row" style="padding-top: 4rem; padding-bottom: 4rem;">
+            <div class="col-md-6 order-md-2 col-lg-6 centered">
+                <p style="font-size: 20px;">Tramites y Servicios registrados</p>    
+            </div>
+            
+            <div class="col-md-6 order-md-1 col-lg-6 align-items-esencia">
+                <p style="font-size: 20px;">Realiza los trámites para constituir una empresa</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-1">
+                <div class="d-flex align-items-center">
+                    <h2 class="elementor-heading-title elementor-size-default" style="color:black; border-right: 1px solid black; padding-right: 5px;">1</h2>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="elementor-heading-title elementor-size-default">Inscripción al RFC</h2>
+                <p><strong>Se realizan en: </strong>Módulos de Servicios Tributario más cercano</p>
+                <div class="col-md-12 mb-2">
+                    <strong>Nivel de gobierno:</strong>&nbsp;&nbsp;
+                    <label class="stylenivelgob styleentidad" style="display: inline-block; margin-right: 15px; margin-left: 5px; padding: 4px 8px; border-radius: 28px; color: #ffffff; font-weight: bold; background-color: #925e78; font-size: 12px;">Administración Pública Federal</label>
+                </div>
+                <p>Permite la Inscripción en el RFC y obtener la Cédula de Identificación Fiscal que contiene la clave del Registro Federal de Contribuyentes.</p>
+            </div>
+            <div class="col-md-4">
+                <img width="100" height="100" src="{% static 'images/unnamed.jpg' %}" class="attachment-large size-large" alt="" loading="lazy">
+            </div>
+        </div>
+    </div>
+</div> -->
+{% block footer %}
+{% include 'bases/footer.html'%}
+{% endblock %}
+{% endblock %}
